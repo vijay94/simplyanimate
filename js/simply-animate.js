@@ -74,7 +74,8 @@ var SimplyAnimate = Class.extend({
     selector : ".simply-animate",
     animateClass : "animated",
     wrapper : window,
-    scrollIn : document
+    scrollIn : document,
+    twoWay : true
   },
   init: function(option){
     $.extend( this.options, option );
@@ -178,7 +179,7 @@ var SimplyAnimate = Class.extend({
           $(this).css({"visibility":"visible","animationDelay":animationDelay});
           $(this).addClass(object.options.animateClass);
           $(this).addClass(animateStyle);
-        }else{
+        }else if(object.options.twoWay){
           $(this).removeClass(object.options.animateClass);
           $(this).removeClass(animateStyle);
           $(this).css("visibility","hidden");
