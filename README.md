@@ -25,7 +25,9 @@ MIT Licence
 
 ```javascript
   $(document).ready(function(){
-    new SimplyAnimate();
+    new SimplyAnimate({
+      twoWay : false
+    });
   });
 ```
 
