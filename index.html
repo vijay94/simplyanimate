@@ -8,6 +8,7 @@
     <style media="screen">
       .box{
         height: 200px;
+        width: 200px;
         background-color: red;
       }
       .full-height{
@@ -18,57 +19,76 @@
   </head>
   <body>
     <div class="col-xs-12 full-height">
-      <div class="simply-animate col-xs-6 box " animate-style="slideInLeft">
+      <div class=" col-xs-6">
+        <div class="simply-animate box " animate-style="slideInLeft">
 
+        </div>
       </div>
     </div>
     <div class="col-xs-12 full-height">
-      <div class="simply-animate col-xs-6 box " animate-style="slideInLeft" animate-delay="">
+      <div class="col-xs-6">
+        <div class="simply-animate box"  animate-style="slideInRight" animate-delay="">
 
+        </div>
       </div>
     </div>
     <div class="col-xs-12 full-height">
-      <div class="simply-animate col-xs-6 box" animate-style="slideInLeft">
+      <div class="col-xs-6">
+        <div class="simply-animate box" animate-style="swing">
 
+        </div>
       </div>
     </div>
     <div class="col-xs-12 full-height">
-      <div class="simply-animate col-xs-6 box " animate-style="slideInLeft">
+      <div class=" col-xs-6">
+        <div class="simply-animate box " animate-style="tada">
 
+        </div>
       </div>
     </div>
     <div class="col-xs-12 full-height">
-      <div class="simply-animate col-xs-6 box " animate-style="slideInLeft">
+      <div class="col-xs-6">
+        <div class="simply-animate box " animate-style="jello">
 
+        </div>
       </div>
     </div>
     <div class="col-xs-12 full-height">
-      <div class="simply-animate col-xs-6 box " animate-style="slideInLeft">
+      <div class=" col-xs-6">
+        <div class="simply-animate box " animate-style="bounceInDown">
 
+        </div>
       </div>
     </div>
     <div class="col-xs-12 full-height">
-      <div class="simply-animate col-xs-6 box " animate-style="slideInLeft">
+      <div class="col-xs-6">
+        <div class="simply-animate  box " animate-style="bounceInUp">
 
+        </div>
       </div>
     </div>
     <div class="col-xs-12 full-height">
-      <div class="simply-animate col-xs-6 box " animate-style="slideInLeft">
+      <div class="col-xs-6">
+        <div class="simply-animate  box" animate-style="rotateInDownLeft">
 
+        </div>
       </div>
     </div>
     <div class="col-xs-12 full-height">
-      <div class="simply-animate col-xs-6 box " animate-style="slideInLeft">
+      <div class="col-xs-6">
+        <div class="simply-animate box" animate-style="rotateInUpRight">
 
+        </div>
       </div>
     </div>
-
   </body>
   <script src="js/app.js" charset="utf-8"></script>
   <script src="js/simply-animate.js" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).ready(function (e) {
-      new SimplyAnimate();
+      new SimplyAnimate({
+        twoWay : false
+      });
     });
   </script>
 </html>
